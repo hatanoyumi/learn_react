@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>React学習</title>
+</head>
+
+<body>
+
+  <div id="app"></div>
+
+
+  <script type="text/javascript">
+      // id="app"を呼び出してappにする
+      const app = document.getElementById('app');
+
+      // h1要素を作成してheaderにする
+      const header = document.createElement('h1');
+
+      // テキスト設定してheaderContentにする
+      const text = 'Develop. Preview. Ship.';
+      const headerContent = document.createTextNode(text);
+
+      // header（h1要素）にheaderContentを追加
+      header.appendChild(headerContent);
+
+      // id="app"にheader（h1要素）を入れる
+      app.appendChild(header);
+
+    </script>
+
+</body>
+</html>

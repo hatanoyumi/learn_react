@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>React学習 新しく作成したプロジェクトでReactを使用する</title>
+</head>
+
+<body>
+
+  <div id="app"></div>
+
+  <!--
+  ・react はReact のコアライブラリです。
+  ・react-dom は、 React を DOM で使用できるようにする DOM 固有のメソッドを提供します。
+  -->
+  <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+  <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+
+  <!-- Babel Script -->
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  <!-- text/jsxにすることでBabelがjsに変換できる -->
+  <script type="text/jsx">
+    const domNode = document.getElementById('app');
+
+    // 関数（コンポーネント）headerを作成
+    function Header() {
+      return <h1>Develop. Preview. Ship.</h1>;
+    }
+
+    // 新しくHomePage()を作ってそこに Header()をネスト
+    function HomePage() {
+      return (
+        <div>
+          {/* Nesting the Header component */}
+          <Header />
+          <TestPage />
+        </div>
+      );
+    }
+
+    function TestPage() {
+      const names = ['Ada Lovelace', 'Grace Hopper', 'Margaret Hamilton'];
+
+      return (
+          <ul>
+            {names.map((name) => (
+              <li key={name}>{name}</li>
+            ))}
+          </ul>
+      );
+    }
+
+    const root = ReactDOM.createRoot(app);
+    // root.render(<Header />);からレンダリングするのをHomePageに変更
+    root.render(<HomePage />);
+  </script>
+
+</body>
+</html>
