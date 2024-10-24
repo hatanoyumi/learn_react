@@ -1,0 +1,61 @@
+<!-- Linkコンポーネントを使用するためにインポート -->
+import Link from 'next/link';
+
+
+<!-- ./ssrへ遷移するためのリンク -->
+<Link href="./ssr">
+  <a>Go To SSR</a>
+</Link>
+
+
+<!-- hrefに文字列を指定する代わりにオブジェクトを指定 -->
+<Link href="./ssg?keyword=next">
+  <a>Go To SSG</a>
+</Link>
+
+<Link
+  href={{
+    pathname: './ssg',
+    query: { keyword: 'hello' },
+  }}>
+  <a>Go To SSG</a>
+</Link>
+
+
+<!-- aタグの代わりにbuttonを使ってonClickで遷移 -->
+<Link href="./ssg">
+  <button>Jump to SSG page</button>
+</Link>
+
+
+<!-- routerオブジェクトのpushメソッドを呼んで遷移 -->
+import { useRouter } from 'next/router'
+
+const router = useRouter()
+
+const onSubmit = () => {
+
+  <!-- ./ssrへ遷移 -->
+  router.push('./ssr')
+
+  <!-- 文字列の代わりにオブジェクトで指定(./ssg?keyword=helloに遷移) -->
+  router.push({
+    pathname: './ssg',
+    query: { keyword: 'hello' },
+  })
+}
+
+<!-- routerには各種メソッドがある -->
+const router = useRouter()
+
+<!-- ページリロード -->
+ router.reload()
+
+ <!-- 前のページに戻る -->
+  router.back()
+
+  <!-- 遷移開始時のイベントを購読 -->
+  <!-- urlに遷移先のパスが入る。shallowはシャロールーティング（パスのみが置き換わる遷移の場合）true -->
+  router.events.on('routeChangeStart', (url, { shallow }) => {
+    //
+  })
