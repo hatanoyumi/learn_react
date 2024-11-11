@@ -78,7 +78,7 @@ const CartProduct = ({
               <Button width={{ base: '100px', md: '200px' }} onClick={() => onBuyButtonClick && onBuyButtonClick(id)}>購入</Button>
               {/* 削除ボタン（モバイル） */}
               <Button marginLeft={1} width={{ base: '100px', md: '200px' }} display={{ base: 'block', md: 'none' }} variant="danger"
-               onClick={() => onRemoveButtonClick && onRemoveButtonClikc(id)}>削除</Button>
+               onClick={() => onRemoveButtonClick && onRemoveButtonClick(id)}>削除</Button>
             </Flex>
           </Flex>
         </Box>

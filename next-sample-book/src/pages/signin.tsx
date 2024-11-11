@@ -10,7 +10,7 @@ const SigninPage: NextPage = () => {
   const router = useRouter()
   // 認証後のイベントハンドラ
   const handleSignin = async (err?: Error) => {
-    ir (!err) {
+    if (!err) {
       // サインインに成功し、クエリが指定されている場合はそのURLに移動。デフォルトはTOPページに移動
       const redirectTo = (router.query['redirect_to'] as string) ?? '/'
 
@@ -37,7 +37,7 @@ const SigninPage: NextPage = () => {
           <Box marginBottom={2}>
             <AppLogo />
           </Box>
-          <Box width="100px">
+          <Box width="100%">
             {/* サインインフォームコンテナSigninFormのユーザー名/パスワードから認証APIを呼び出しonSigninコールバックが呼び出される */}
             <SigninFormContainer onSignin={handleSignin} />
           </Box>

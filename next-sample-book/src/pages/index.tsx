@@ -43,7 +43,7 @@ const HomePage: NextPage<HomePageProps> = ({
     <Layout>
       <Flex padding={2} justifyContent="center" backgroundColor="primary">
         <Flex
-          width={{ base: '100px', md: '1040px' }}
+          width={{ base: '100%', md: '1040px' }}
           justifyContent="space-between"
           alignItems="center"
           flexDirection={{ base: 'column', md: 'row' }}
@@ -82,7 +82,7 @@ const HomePage: NextPage<HomePageProps> = ({
         <Box
           paddingLeft={{ base: 2, md: 0 }}
           paddingRight={{ base: 2, md: 0 }}
-          width={{ base: '100px', md: '1040px' }}
+          width={{ base: '100%', md: '1040px' }}
         >
           <Box marginBottom={3}>
             <Text as="h2" variant="large">

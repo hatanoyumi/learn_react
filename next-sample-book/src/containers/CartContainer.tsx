@@ -16,6 +16,10 @@ const CartContainer = () => {
   const { cart, removeProductFromCart } = useShoppingCartContext()
   // 削除ボタンを押した時、商品を削除
   const handleRemoveButtonClick = (id: number) => {
+    removeProductFromCart(id)
+  }
+  // 購入ボタンを押した時、商品を購入
+  const handleBuyButtonClick = async (id: number) => {
     try {
       setGlobalSpinner(true)
       await purchase(context, { productId: id })
