@@ -1,12 +1,12 @@
 import styled from 'styled-components'
-import { CloseIcon } from 'components/atoms/IconButton'
-import Box from 'components/layout/Box'
 import Flex from 'components/layout/Flex'
+import { CloseIcon } from 'components/atoms/IconButton'
+import Text from 'components/atoms/Text'
 
-const ImagePreviewContainer = styled(Box)`
+const ImagePreviewContainer = styled.div`
   position: relative;
 `
-
+// 閉じるボタンのラップ
 const CloseBox = styled(Flex)`
   position: absolute;
   top: 0;
@@ -16,6 +16,16 @@ const CloseBox = styled(Flex)`
   border-radius: 0 6px 0 6px;
   background-color: rgba(44, 44, 44, 0.66);
   cursor: pointer;
+`
+// 画像タイトル
+const ImageTitle = styled(Text)`
+  position: absolute;
+  top: 14px;
+  border-radius: 0 6px 6px 0;
+  background-color: #1d3461;
+  box-sizing: border-box;
+  padding-left: 4px;
+  padding-right: 4px
 `
 
 interface ImagePreviewProps {
@@ -61,7 +71,7 @@ const ImagePreview = ({
   }
 
   return (
-    <ImagePreviewContainer height={height} width={width}>
+    <ImagePreviewContainer>
       {/* eslint-disable-next-line @next/next/no-img-element */}
       <img src={src} alt={alt} height={height} width={width} />
       <CloseBox

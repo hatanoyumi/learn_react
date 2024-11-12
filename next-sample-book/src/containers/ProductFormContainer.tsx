@@ -18,9 +18,7 @@ interface ProductFormContainerProps {
 /**
  * 商品投稿フォームコンテナ
  */
-const ProductFormContainer = ({
-  onSave,
-}: ProductFormContainerProps) => {
+const ProductFormContainer = ({ onSave }: ProductFormContainerProps) => {
   const { authUser } = useAuthContext()
   const setGlobalSpinner = useGlobalSpinnerActionsContext()
   // 出品ボタンを押した時
@@ -33,7 +31,7 @@ const ProductFormContainer = ({
       description: data.description,
       category: data.category,
       condition: data.condition,
-      price: data.price,
+      price: Number(data.price),
       imageUrl: '/products/shoes/feet-a840619_1920.jpeg', // ダミー画像
       blurDataUrl: '',
       owner: authUser,
@@ -57,4 +55,4 @@ const ProductFormContainer = ({
   return <ProductForm onProductSave={handleSave} />
 }
 
-expect default ProductFormContainer
+export default ProductFormContainer

@@ -24,7 +24,7 @@ const SellPage: NextPage = () => {
 
   return (
     <Layout>
-      <Flex paddingTop={{ base: 2, md: 4}} paddingBottom={{ base: 2, md: 4 }} paddingLeft={{ base: w, md: 0 }} paddingRight={{ base: 2, md: 0 }} justifyContent="center">
+      <Flex paddingTop={{ base: 2, md: 4}} paddingBottom={{ base: 2, md: 4 }} paddingLeft={{ base: 2, md: 0 }} paddingRight={{ base: 2, md: 0 }} justifyContent="center">
         <Flex width="800px" flexDirection="column" justifyContent="center" alignItems="center">
           <Box display={{ base: 'none', md: 'block' }} marginBottom={2}>
             <AppLogo />
