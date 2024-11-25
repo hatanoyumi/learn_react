@@ -17,8 +17,8 @@ import ParentUseContext from './components/UseContextSample';
 import ImageUploader from './components/UseRefSample';
 import { Input } from './components/UseInputSample';
 
-
-import App from "./App";
+import AppTutorial from "./components/AppTutorial";
+import AppTutorial2 from "./components/AppTutorial2";
 
 
 
@@ -41,7 +41,8 @@ root.render(
     <ParentUseContext />
     <ImageUploader />
     <Input />
-    <App />
+    <AppTutorial />
+    <AppTutorial2 />
   </React.StrictMode>
 );
 

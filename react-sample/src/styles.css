@@ -48,7 +48,6 @@ h6 {
   font-size: 12px;
 }
 
-
 ul {
   padding-inline-start: 20px;
 }
@@ -80,8 +79,17 @@ ul {
 .game {
   display: flex;
   flex-direction: row;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #c6c6c6;
 }
 
 .game-info {
   margin-left: 20px;
+}
+
+hr {
+  border: 0 none;
+  border-top: 1px solid #c6c6c6;
+  height: 1px;
+  margin: 20px auto 15px;
 }
