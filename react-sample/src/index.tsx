@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
+import "./styles.css";
+
 import Hello from './components/Hello';
 import Name from './components/Name';
 // import reportWebVitals from './reportWebVitals';
@@ -16,9 +17,15 @@ import ParentUseContext from './components/UseContextSample';
 import ImageUploader from './components/UseRefSample';
 import { Input } from './components/UseInputSample';
 
+
+import App from "./App";
+
+
+
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
+
 root.render(
   <React.StrictMode>
     <Hello />
@@ -34,6 +41,7 @@ root.render(
     <ParentUseContext />
     <ImageUploader />
     <Input />
+    <App />
   </React.StrictMode>
 );
 
@@ -41,3 +49,8 @@ root.render(
 // to log results (for example: reportWebVitals(console.log))
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 // reportWebVitals();
+
+
+export default function Square() {
+  return <button className="square">X</button>;
+}
