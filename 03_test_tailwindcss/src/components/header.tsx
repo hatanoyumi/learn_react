@@ -4,7 +4,7 @@ export default function Header() {
   return (
     <div className="bg-white lg:pb-12">
       <p className="text-gray-300 text-center">
-      https://flowrift.com/c/header/jwyCn?view=preview からサンプルとしてコピペ
+      ↓header　https://flowrift.com/c/header/jwyCn?view=preview からサンプルとしてコピペ
       </p>
       <div className="mx-auto max-w-screen-2xl px-4 md:px-8">
         <header className="flex items-center justify-between py-4 md:py-8">

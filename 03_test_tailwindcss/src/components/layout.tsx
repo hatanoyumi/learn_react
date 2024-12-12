@@ -10,7 +10,7 @@ export default function Layout({
   return (
     <div>
       <Header />
-      <main>{children}</main>
+      <main className="max-w-screen-2xl md:px-8 mx-auto my-0 text-center">{children}</main>
       <Footer />
     </div>
   );
