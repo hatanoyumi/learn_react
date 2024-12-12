@@ -1,8 +1,8 @@
 export default function Page() {
   return (
-    <main>
+    <main className="text-center">
       <h1>about</h1>
-      <p>ページテストここに内容何か</p>
+      <p>ここはaboutページ</p>
     </main>
   );
 }

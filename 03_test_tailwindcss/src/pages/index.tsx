@@ -1,6 +1,6 @@
 export default function Page() {
   return (
-    <main>
+    <main className="text-center">
       <h1>これはh1テスト</h1>
       <h2>これはh2テスト</h2>
       <h3>これはh3テスト</h3>
