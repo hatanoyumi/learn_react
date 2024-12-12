@@ -1,14 +1,11 @@
 export default function Navbar() {
   return (
-    <header>
       <nav>
-        <h1>テストページ</h1>
-        <ul>
-          <li><a href="./test/">menu1</a></li>
-          <li><a href="./test/index2">menu2</a></li>
-          <li><a href="#">menu3</a></li>
+        <ul className="flex text-sm items-center justify-center h-12">
+          <li className="w-36 bg-indigo-200"><a href="../">index</a></li>
+          <li className="w-36 bg-indigo-200"><a href="../about">about</a></li>
+          <li className="w-36 bg-indigo-200"><a href="../testpage">testpage</a></li>
         </ul>
       </nav>
-    </header>
-  )
+)
 }

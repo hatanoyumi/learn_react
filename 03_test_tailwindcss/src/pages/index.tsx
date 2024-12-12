@@ -8,5 +8,5 @@ export default function Page() {
       <h5>これはh5テスト</h5>
       <p>これはPテスト</p>
     </main>
-);
+  );
 }
