@@ -20,16 +20,18 @@
 //     </>
 //   );
 // }
-import type { FC, ReactNode } from 'react';
+import type { ReactNode } from 'react';
 import Header from './header'
 import Footer from './footer'
-import Head from 'next/head';
+import Head from 'next/head'
+import styles from './layout.module.css'
+import { twMerge } from 'tailwind-merge'
 
 type Props = {
 	children: ReactNode;
 };
 
-const Layout: FC<Props> = ({ children }) => {
+const Layout = ({ children }: Props) => {
 	return (
     <>
     <Head>
@@ -37,10 +39,11 @@ const Layout: FC<Props> = ({ children }) => {
     </Head>
 
     <Header />
-      <main className="max-w-screen-2xl md:px-8 mx-auto my-0 text-center">{children}</main>
+      <main className={styles.container}>{children}</main>
     <Footer />
     </>
   )
 };
 
 export default Layout;
+

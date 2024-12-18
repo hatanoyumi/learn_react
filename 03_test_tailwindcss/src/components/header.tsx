@@ -2,7 +2,7 @@ import Navbar from './navbar'
 
 export default function Header() {
   return (
-    <div className="bg-white lg:pb-12">
+    <div className="bg-white border-b-2">
       <p className="text-gray-300 text-center">
       ↓header　https://flowrift.com/c/header/jwyCn?view=preview からサンプルとしてコピペ
       </p>
