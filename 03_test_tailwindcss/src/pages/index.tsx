@@ -10,6 +10,7 @@ export default function Page() {
     <p className="text-gray-300 text-center">
     https://flowrift.com/c/form/oHxFf?view=code からサンプルとしてコピペ
     </p>
+    <p>テスト</p>
     <div className="bg-white py-6 sm:py-8 lg:py-12">
       <div className="mx-auto max-w-screen-2xl px-4 md:px-8">
         <h2 className="mb-4 text-center text-2xl font-bold text-gray-800 md:mb-8 lg:text-3xl">Login</h2>

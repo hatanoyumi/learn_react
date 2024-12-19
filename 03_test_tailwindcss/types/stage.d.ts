@@ -1,0 +1,1 @@
+export type VITE_STAGE = 'PRODUCTION' | 'LOCAL' | 'DEVELOPMENT';

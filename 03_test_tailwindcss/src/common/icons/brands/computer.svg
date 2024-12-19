@@ -1,0 +1,20 @@
+<svg width="96" height="97" viewBox="0 0 96 97" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path fill-rule="evenodd" clip-rule="evenodd" d="M34 71.3129H50V74.3129H34V71.3129Z" fill="currentcolor" />
+  <path fill-rule="evenodd" clip-rule="evenodd"
+    d="M10 14.3129C8.62843 14.3129 7.5 15.4413 7.5 16.8129V44.8129H4.5V16.8129C4.5 13.7844 6.97157 11.3129 10 11.3129H86C89.0284 11.3129 91.5 13.7844 91.5 16.8129V32.8129H88.5V16.8129C88.5 15.4413 87.3716 14.3129 86 14.3129H10Z"
+    fill="currentcolor" />
+  <path fill-rule="evenodd" clip-rule="evenodd" d="M50 86.3129H34V83.3129H50V86.3129Z" fill="currentcolor" />
+  <path fill-rule="evenodd" clip-rule="evenodd" d="M38.5 80.8129V72.8129H41.5V80.8129H38.5Z" fill="currentcolor" />
+  <path fill-rule="evenodd" clip-rule="evenodd" d="M50 58.3129H34V55.3129H50V58.3129Z" fill="currentcolor" />
+  <path fill-rule="evenodd" clip-rule="evenodd"
+    d="M36 83.3129C37.3716 83.3129 38.5 82.1844 38.5 80.8129H41.5C41.5 83.8413 39.0284 86.3129 36 86.3129V83.3129Z"
+    fill="currentcolor" />
+  <path fill-rule="evenodd" clip-rule="evenodd"
+    d="M10 54.3129C8.61929 54.3129 7.5 55.4322 7.5 56.8129V80.8129C7.5 82.1936 8.61929 83.3129 10 83.3129H22C23.3807 83.3129 24.5 82.1936 24.5 80.8129V56.8129C24.5 55.4322 23.3807 54.3129 22 54.3129H10ZM4.5 56.8129C4.5 53.7753 6.96243 51.3129 10 51.3129H22C25.0376 51.3129 27.5 53.7753 27.5 56.8129V80.8129C27.5 83.8504 25.0376 86.3129 22 86.3129H10C6.96243 86.3129 4.5 83.8504 4.5 80.8129V56.8129Z"
+    fill="currentcolor" />
+  <path fill-rule="evenodd" clip-rule="evenodd" d="M20 80.313H12V77.313H20V80.313Z" fill="currentcolor" />
+  <path fill-rule="evenodd" clip-rule="evenodd" d="M78 80.313H70V77.313H78V80.313Z" fill="currentcolor" />
+  <path fill-rule="evenodd" clip-rule="evenodd"
+    d="M62 42.3129C60.6193 42.3129 59.5 43.4322 59.5 44.8129V80.8129C59.5 82.1936 60.6193 83.3129 62 83.3129H86C87.3807 83.3129 88.5 82.1936 88.5 80.8129V44.8129C88.5 43.4322 87.3807 42.3129 86 42.3129H62ZM56.5 44.8129C56.5 41.7753 58.9624 39.3129 62 39.3129H86C89.0376 39.3129 91.5 41.7753 91.5 44.8129V80.8129C91.5 83.8504 89.0376 86.3129 86 86.3129H62C58.9624 86.3129 56.5 83.8504 56.5 80.8129V44.8129Z"
+    fill="currentcolor" />
+</svg>
