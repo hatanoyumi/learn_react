@@ -7,8 +7,9 @@ ReactとNextの勉強場所
 02 React<br>
 03 tailwindcss(pages_router)
 
-ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
-learn_js内で勉強
+ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー<br>
+learn_js内で勉強<br>
+<br>
 
 20250123〜0213 learn_js → JS学習「これからのjavascriptの教科書」使用<br>
 → learn_js/Vite/vite-animation<br>
