@@ -28,4 +28,5 @@ learn_js内で勉強<br>
 「Todoアプリ」<br>
 → learn_js/<br>
 <br>
-※保留　2025/3/12〜　React Hooks と TypeScript でつくる Todo PWA ~ 入門 React ハンズオン　参照：https://zenn.dev/sprout2000/books/76a279bb90c3f3<br>
+2025/3/24〜　React Hooks と TypeScript でつくる Todo PWA ~ 入門 React ハンズオン　参照：https://zenn.dev/sprout2000/books/76a279bb90c3f3<br>
+3/25 →　Chapter 21　SideBar コンポーネントの MUI 化まで<br>
