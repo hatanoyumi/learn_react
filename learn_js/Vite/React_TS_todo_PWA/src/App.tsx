@@ -4,7 +4,7 @@ import { useState } from "react";
 // FormDialog コンポーネント を名前付きインポートする
 import { FormDialog } from "./FormDialog";
 
-// Actionbutton コンポーネント をインポートする
+// ActionButton コンポーネント をインポートする
 import { ActionButton } from "./ActionButton";
 
 // SideBar コンポーネント をインポート
@@ -22,6 +22,11 @@ import GlobalStyles from "@mui/material/GlobalStyles";
 // スタイルエンジンのモジュールとカラーをインポート
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 import { indigo, pink } from "@mui/material/colors";
+
+// QR表示コンポーネントをインポート
+import { QR } from "./QR";
+
+
 
 // テーマを作成
 const theme = createTheme({
@@ -67,16 +72,34 @@ export const App = () => {
   const [filter, setFilter] = useState<Filter>('all');
   // SideBar コンポーネント を MUI化する (ドロワーの状態を管理するステートを追加)
   const [drawerOpen, setDrawerOpen] = useState(false);
+  // QR コード表示機能を追加
+  const [qrOpen, setQrOpen] = useState(false);
+  // ダイアログの状態を管理するステートを追加
+  const [dialogOpen, setDialogOpen] = useState(false);
 
-  // setText していた部分を関数 handleChange() として書き出し
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+
+  //// setText していた部分を関数 handleChange() として書き出し
+  // const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+  //   setText(e.target.value);
+  // };
+  // ↓↓ FormDialog追加で変更
+  const handleChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
     setText(e.target.value);
   };
+
 
   // todos ステートを更新する関数
   const handleSubmit = () => {
     // 何も入力されていなかったらリターン
-    if (!text) return;
+    // if (!text) return;
+    // ↓ FormDialog コンポーネントの追加で変更
+    if (!text) {
+      // 何も入力されなかっと時
+      setDialogOpen((dialogOpen) => !dialogOpen);
+      return;
+    }
 
     // 新しいTodoを作成
     // 明示的に型注釈をつけてオブジェクトの方を限定
@@ -100,6 +123,8 @@ export const App = () => {
     setTodos((todos) => [newTodo, ...todos]);
     // フォームへの入力をクリア
     setText('');
+    // FormDialog コンポーネントを閉じる
+    setDialogOpen((dialogOpen) => !dialogOpen);
   };
 
   // // 登録済み todo が編集された時のコールバック関数を作成
@@ -198,10 +223,10 @@ export const App = () => {
   //       // 削除されていないもの
   //       return !todo.removed;
   //     case 'checked':
-  //       // 完了済み　かつ　削除されていないもの
+  //       // 完了済み かつ 削除されていないもの
   //       return todo.checked && !todo.removed;
   //     case 'unchecked':
-  //       // 未完了　かつ　削除されていないもの
+  //       // 未完了 かつ 削除されていないもの
   //       return !todo.checked && !todo.removed;
   //     case 'removed':
   //       // 削除済みのもの
@@ -223,9 +248,21 @@ export const App = () => {
   //   newItems.push(items[i] * 2);
   // }
 
-  // ドロワーの状態を管理するステートを反転する関数
+  // ドロワーの状態を管理するステートの表示・非表示を切り替える関数
   const handleToggleDrawer = () => {
     setDrawerOpen((drawerOpen) => !drawerOpen);
+  };
+
+  // QR コード表示機能を管理するステートの表示・非表示を切り替える関数
+  const handleToggleQR = () => {
+    setQrOpen((qrOpen) => !qrOpen);
+  };
+
+  // FormDialog コンポーネント
+  const handleToggleDialog = () => {
+    setDialogOpen((dialogOpen) => !dialogOpen);
+    // フォームへの入力をクリア
+    setText('');
   };
 
 
@@ -258,7 +295,12 @@ export const App = () => {
         drawerOpen={drawerOpen}
         onToggleDrawer={handleToggleDrawer}
         onFilter={handleFilter}
+        // 追加
+        onToggleQR={handleToggleQR}
       />
+
+      {/* QRコード表示の追加 */}
+      <QR open={qrOpen} onClose={handleToggleQR} />
 
 
       {/* フィルターが `removed` のときは「ごみ箱を空にする」ボタンを表示 */}
@@ -311,6 +353,9 @@ export const App = () => {
         text={text}
         onChange={handleChange}
         onSubmit={handleSubmit}
+        // 追加
+        dialogOpen={dialogOpen}
+        onToggleDialog={handleToggleDialog}
       />
 
       {/* <ul>
