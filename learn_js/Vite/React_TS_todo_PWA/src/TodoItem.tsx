@@ -39,6 +39,13 @@ const TodoCard = styled(Card)(({ theme }) => ({
 
 const Form = styled('div')(({ theme }) => ({
   marginTop: theme.spacing(1),
+  marginLeft: theme.spacing(1),
+  marginRight: theme.spacing(1),
+  fontSize: '16px',
+}));
+
+const ButtonContainer = styled('div')(({ theme }) => ({
+  marginTop: theme.spacing(1),
   display: 'flex',
   flexDirection: 'row',
   justifyContent: 'space-between',
@@ -115,62 +122,62 @@ export const TodoItem = (props: Props) => {
                 onChange={(e) => props.onTodo(todo.id, 'value', e.target.value)}
                 disabled={todo.checked || todo.removed}
               />
-              <ButtonContainer>
-                <Button
-                aria-label={`todo-check-${todo.value}`}
-                onClick={() => props.onTodo(todo.id, 'checked', !todo.checked)}
-                disabled={props.filter === 'removed'}
-                >
-                  {todo.checked ? (
-                    <Icon
-                      aria-label={`todo-removed-${todo.value}`}
-                      style={{
-                        color: props.filter !== 'removed' ? pink.A200 : grey[500],
-                      }}
-                    >
-                      check_circle_outline
-                    </Icon>
-                  ) : (
-                    <Icon
-                      aria-label={`todo-uncheck-${todo.value}`}
-                      style={{
-                        color: props.filter !== 'removed' ? lightBlue[500] : grey[500],
-                      }}
-                    >
-                      radio_button_unchecked
-                    </Icon>
-                  )}
-                  <Typography
+            </Form>
+            <ButtonContainer>
+              <Button
+              aria-label={`todo-check-${todo.value}`}
+              onClick={() => props.onTodo(todo.id, 'checked', !todo.checked)}
+              disabled={props.filter === 'removed'}
+              >
+                {todo.checked ? (
+                  <Icon
+                    aria-label={`todo-removed-${todo.value}`}
                     style={{
-                      userSelect: 'none',
-                      color: todo.checked && props.filter !== 'removed' ? pink.A200 : grwy[500],
+                      color: props.filter !== 'removed' ? pink.A200 : grey[500],
                     }}
                   >
-                    Done
-                  </Typography>
-                </Button>
-                <Trash
-                  aria-label={`todo-trash-$todo.value`}
-                  onClick={() => props.onTodo(todo.id, 'removed', !todo.removed)}
+                    check_circle_outline
+                  </Icon>
+                ) : (
+                  <Icon
+                    aria-label={`todo-uncheck-${todo.value}`}
+                    style={{
+                      color: props.filter !== 'removed' ? lightBlue[500] : grey[500],
+                    }}
+                  >
+                    radio_button_unchecked
+                  </Icon>
+                )}
+                <Typography
+                  style={{
+                    userSelect: 'none',
+                    color: todo.checked && props.filter !== 'removed' ? pink.A200 : grey[500],
+                  }}
                 >
-                  {todo.removed ? (
-                    <Icon
-                      aria-label={`todo-undo-${todo.value}`}
-                      style={{ color: lightBlue[500] }}
-                    >
-                      undo
-                    </Icon>
-                  ) : (
-                    <Icon
-                      aria-label={`todo-delete-${todo.value}`}
-                      style={{ color: grey[500] }}
-                    >
-                      delete
-                    </Icon>
-                  )}
-                </Trash>
-              </ButtonContainer>
-            </Form>
+                  Done
+                </Typography>
+              </Button>
+              <Trash
+                aria-label={`todo-trash-$todo.value`}
+                onClick={() => props.onTodo(todo.id, 'removed', !todo.removed)}
+              >
+                {todo.removed ? (
+                  <Icon
+                    aria-label={`todo-undo-${todo.value}`}
+                    style={{ color: lightBlue[500] }}
+                  >
+                    undo
+                  </Icon>
+                ) : (
+                  <Icon
+                    aria-label={`todo-delete-${todo.value}`}
+                    style={{ color: grey[500] }}
+                  >
+                    delete
+                  </Icon>
+                )}
+              </Trash>
+            </ButtonContainer>
           </TodoCard>
         );
       })}

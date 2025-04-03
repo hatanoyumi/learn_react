@@ -1,5 +1,6 @@
 // React から useState フックをインポート
-import { useState } from "react";
+// useEffect フックをインポート
+import { useEffect, useState } from "react";
 
 // FormDialog コンポーネント を名前付きインポートする
 import { FormDialog } from "./FormDialog";
@@ -25,6 +26,15 @@ import { indigo, pink } from "@mui/material/colors";
 
 // QR表示コンポーネントをインポート
 import { QR } from "./QR";
+
+// AlertDialog コンポーネント
+import { AlertDialog } from './AlertDialog';
+
+// localforage をインポート
+import localforage from "localforage";
+
+// 型チェック
+import { isTodos } from "./lib/isTodos";
 
 
 
@@ -76,6 +86,8 @@ export const App = () => {
   const [qrOpen, setQrOpen] = useState(false);
   // ダイアログの状態を管理するステートを追加
   const [dialogOpen, setDialogOpen] = useState(false);
+  // AlertDialog コンポーネント用
+  const [alertOpen, setAlertOpen] = useState(false);
 
 
   //// setText していた部分を関数 handleChange() として書き出し
@@ -96,7 +108,7 @@ export const App = () => {
     // if (!text) return;
     // ↓ FormDialog コンポーネントの追加で変更
     if (!text) {
-      // 何も入力されなかっと時
+      // 何も入力されなかった時
       setDialogOpen((dialogOpen) => !dialogOpen);
       return;
     }
@@ -265,6 +277,39 @@ export const App = () => {
     setText('');
   };
 
+  // AlertDialog コンポーネント
+  const handleToggleAlert = () => {
+    setAlertOpen((alertOpen) => !alertOpen);
+  };
+
+  /**
+   * [useEffect フック]
+   * useEffect フックはコンポーネントの内側、return 文の直前に配置
+   *
+   * キー名 'todo-20200101' のデータを取得
+   * 第 2 引数の配列が空なのでコンポーネントのマウント時のみに実行される
+;  */
+  // useEffect(() => {
+  //   localforage
+  //     .getItem('todo-20200101')
+  //     .then((values) => setTodos(values as Todo[]));
+  // }, [])
+  // ↓↓型チェックを適用
+  useEffect(() => {
+    localforage
+    .getItem('todo-20200101')
+    .then((values) => isTodos(values) && setTodos(values));
+  }, []);
+
+  /**
+   * todos ステートが更新されたら、その値を保存
+  */
+  useEffect(() => {
+    localforage.setItem('todo-20200101', todos);
+  }, [todos]);
+
+
+
 
   return(
     // MUIのテーマを作成したら、ThemeProviderでラップする
@@ -389,11 +434,25 @@ export const App = () => {
       </ul> */}
       {/* →→ filteredTodos と併せて TodoItem.tsxへ移動 */}
 
+      {/* AlertDialog コンポーネント */}
+      <AlertDialog
+        alertOpen={alertOpen}
+        onEmpty={handleEmpty}
+        onToggleAlert={handleToggleAlert}
+      />
+
       {/* TodoItemに渡すpropsに書き換え */}
       <TodoItem todos={todos} filter={filter} onTodo={handleTodo} />
 
       {/* ActionButtonに渡すpropsに書き換え */}
-      <ActionButton todos={todos} onEmpty={handleEmpty} />
+      <ActionButton
+        todos={todos}
+        filter={filter}
+        alertOpen={alertOpen}
+        dialogOpen={dialogOpen}
+        onToggleAlert={handleToggleAlert}
+        onToggleDialog={handleToggleDialog}
+        />
 
     </ThemeProvider>
   );
