@@ -10,7 +10,7 @@ export default defineConfig({
   // plugins 配列に VitePWA を追加。さらにmanifest.json を生成するための manifest オプションも設定
   plugins: [react(), VitePWA({
     manifest: {
-      id: '/todo/', // 通常は GitHub リポジトリ名と同じ
+      id: '/learn_react/', // 通常は GitHub リポジトリ名と同じ
       // ユーザーに表示されるアプリ名
       name: 'Todo App (PWA)',
       // name を表示するのに十分なスペースがない場合に表示されるアプリ名
