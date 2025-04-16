@@ -1,0 +1,89 @@
+$black: rgb(48, 44, 49);
+
+.root {
+  --ease-out-quint: cubic-bezier(0.23, 1, 0.32, 1);
+  --path-nikukyuu: "M4 3C4.55231 3 5 2.32843 5 1.5C5 0.67157 4.55231 0 4 0C3.44769 0 3 0.67157 3 1.5C3 2.32843 3.44769 3 4 3ZM2 3.5C2 4.32843 1.55231 5 1 5C0.447693 5 0 4.32843 0 3.5C0 2.67157 0.447693 2 1 2C1.55231 2 2 2.67157 2 3.5ZM10 9.7533C10 11.1618 8.87494 11.0642 7.26923 10.9249C6.72614 10.8778 6.12811 10.8259 5.5 10.8259C4.87189 10.8259 4.27386 10.8778 3.73077 10.9249C2.12506 11.0642 1 11.1618 1 9.7533C1 7.86835 3.01471 4 5.5 4C7.98529 4 10 7.86835 10 9.7533ZM8 1.5C8 2.32843 7.55231 3 7 3C6.44769 3 6 2.32843 6 1.5C6 0.67157 6.44769 0 7 0C7.55231 0 8 0.67157 8 1.5ZM10 5C10.5523 5 11 4.32843 11 3.5C11 2.67157 10.5523 2 10 2C9.44769 2 9 2.67157 9 3.5C9 4.32843 9.44769 5 10 5Z";
+  --path-neko: "M8.80708 0.852953C9.33477 0.482881 10.05 0.900861 9.9972 1.54849L9.70342 5.15411C9.89536 5.69612 10 6.25787 10 6.80898C10 9.35798 7.76143 10.7143 5 10.7143C2.23858 10.7143 0 9.35798 0 6.80898C0 6.2579 0.104631 5.69619 0.296555 5.1542L0.00275944 1.54849C-0.0500095 0.90086 0.665194 0.482881 1.19288 0.852953L2.89012 2.04324C3.53117 1.69048 4.2461 1.48353 5 1.48353C5.75389 1.48353 6.46882 1.69047 7.10986 2.04322L8.80708 0.852953Z";
+
+  color: $black;
+  position: relative;
+  box-sizing: border-box;
+}
+
+.trigger {
+  width: 100%;
+  appearance: none;
+  padding: 8px 12px;
+  border: 1px solid #ddd;
+  background-color: #fff;
+  box-shadow: rgba($black, 0.2) 0px 2px 8px 0px;
+  border-radius: 4px;
+  text-align: left;
+  cursor: pointer;
+  color: inherit;
+  &::after {
+    content: "";
+    clip-path: path(var(--path-nikukyuu));
+    background-color: #675863;
+    position: absolute;
+    width: 11px;
+    height: 11px;
+    right: 12px;
+    top: 14px;
+  }
+}
+.options {
+  position: absolute;
+  box-sizing: border-box;
+  width: 100%;
+  display: grid;
+  margin: 4px 0 0 0;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  list-style: none;
+  padding: 0px;
+  border-radius: 5px;
+  box-shadow: rgba($black, 0.55) 0px 7px 45px 0px;
+  transform-origin: top;
+  overflow: hidden;
+}
+.option {
+  position: relative;
+  margin: 0;
+  padding: 4px 8px 4px 28px;
+  cursor: pointer;
+  transition: background-color 0.15s;
+  &.selected {
+    background-color: #d8b2df;
+    color: #341f2f;
+    font-weight: bold;
+    &::before {
+      content: "";
+      position: absolute;
+      width: 10px;
+      height: 11px;
+      top: 11px;
+      left: 8px;
+      background-color: currentColor;
+      clip-path: path(var(--path-neko));
+    }
+  }
+  &.active:not(.selected) {
+    background-color: #ecd1f1;
+  }
+}
+
+.listEnterActive {
+  transition: opacity 0.2s var(--ease-out-quint),
+    transform 0.2s var(--ease-out-quint);
+}
+.listLeaveActive {
+  transition: opacity 0.3s 0.2s var(--ease-out-quint),
+    transform 0.3s 0.2s var(--ease-out-quint);
+}
+
+.listEnterFrom,
+.listLeaveTo {
+  opacity: 0;
+  transform: scaleY(0.85);
+}

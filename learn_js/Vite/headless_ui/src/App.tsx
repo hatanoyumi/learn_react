@@ -18,7 +18,7 @@
 // export default App;
 
 import { ListboxPlainSample } from "./components/ListPlainSample";
-// import { ListboxStyledSample } from "./components/ListStyledSample";
+import { ListboxStyledSample } from "./components/ListStyledSample";
 import styles from "./App.module.scss";
 
 function App() {
@@ -46,7 +46,7 @@ function App() {
           Modulesを使用していますが、Styled
           ComponentやTailwindなど、好きなスタイリング方法を使うことができます。
         </p>
-        {/* <ListboxStyledSample /> */}
+        <ListboxStyledSample />
       </section>
     </div>
   );

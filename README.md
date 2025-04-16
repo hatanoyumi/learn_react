@@ -32,3 +32,6 @@ learn_js内で勉強<br>
 4/3 → GitHubページの設定で公開元ブランチをgh-pagesに変更。<br>
 参照：https://docs.github.com/ja/pages/quickstart<br>
 完成したのがこちら：https://hatanoyumi.github.io/learn_react/<br>
+<br>
+2025/4/14~ ヘッドレスUIをReactで使ってみる 参照：https://ics.media/entry/230413/
+結果：learn_js/Vite/headless_ui
