@@ -1,0 +1,11 @@
+nav {
+  display: flex;
+  gap: 16px;
+}
+
+a {
+  color: #666;
+}
+a.active {
+  color: #c00;
+}
