@@ -40,5 +40,11 @@ learn_js内で勉強<br>
 結果：learn_js/Vite/stamp_card<br>
 ※この記事内容ではQRコード読み込んでない。一旦保留<br>
 <br>
-2025/04/21〜　React Router v7(フレームワーク利用) 実践ガイド<br>
+2025/04/21〜　<br>
+React Router v7(フレームワーク利用) 実践ガイド：ブログサイトを作りながら学ぶ最新ルーティング<br>
 参照：https://shinagawa-web.com/blogs/react-router-v7-framework-guide-blog-site-routing-example<br>
+<br>
+React Router v7(ライブラリ利用)を使ったブログサイトの構築ガイド<br>
+参照：https://shinagawa-web.com/blogs/react-router-v7-library-blog-setup-guide<br>
+結果：learn_js/Vite/react-router_v7<br>
+
