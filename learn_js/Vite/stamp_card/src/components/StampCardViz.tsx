@@ -39,6 +39,7 @@ export const StampCardViz = (props: StampCardVizProps) => {
       {props.stampIds.map((stampId) => (
         (stampPositions[stampId]) && (
           <img
+            key={stampId}
             src={ stampPositions[stampId].img }
             style={{
               position: "absolute",

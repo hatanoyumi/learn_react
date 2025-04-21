@@ -33,9 +33,12 @@ learn_js内で勉強<br>
 参照：https://docs.github.com/ja/pages/quickstart<br>
 完成したのがこちら：https://hatanoyumi.github.io/learn_react/<br>
 <br>
-2025/4/14~17 ヘッドレスUIをReactで使ってみる 参照：https://ics.media/entry/230413/<br>
+2025/4/14〜17 ヘッドレスUIをReactで使ってみる 参照：https://ics.media/entry/230413/<br>
 結果：learn_js/Vite/headless_ui<br>
 <br>
-2025/4/17~18 QRコードを読み込むスタンプカード　参照：https://qiita.com/yo16/items/d17f145e237a3dba5bd3<br>
+2025/4/17〜18 QRコードを読み込むスタンプカード　参照：https://qiita.com/yo16/items/d17f145e237a3dba5bd3<br>
 結果：learn_js/Vite/stamp_card<br>
-※この記事内容ではQRコード読み込んでない。方法を変えてみる→NextかRemix？が必要？
+※この記事内容ではQRコード読み込んでない。一旦保留<br>
+<br>
+2025/04/21〜　React Router v7(フレームワーク利用) 実践ガイド<br>
+参照：https://shinagawa-web.com/blogs/react-router-v7-framework-guide-blog-site-routing-example<br>
