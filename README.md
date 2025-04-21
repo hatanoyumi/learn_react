@@ -24,9 +24,9 @@ learn_js内で勉強<br>
 3/14 「Ajax通信」<br>
 → learn_js/JS_Primer/ajaxapp<br>
 「Node.jsでCLIアプリケーション」<br>
-→ learn_js/<br>
+→ learn_js/JS_Primer/nodecli<br>
 「Todoアプリ」<br>
-→ learn_js/<br>
+→ learn_js/JS_Primer/todoapp<br>
 <br>
 2025/3/24〜　React Hooks と TypeScript でつくる Todo PWA ~ 入門 React ハンズオン　参照：https://zenn.dev/sprout2000/books/76a279bb90c3f3<br>
 4/3 → GitHubページの設定で公開元ブランチをgh-pagesに変更。<br>
@@ -43,6 +43,7 @@ learn_js内で勉強<br>
 2025/04/21〜　<br>
 React Router v7(フレームワーク利用) 実践ガイド：ブログサイトを作りながら学ぶ最新ルーティング<br>
 参照：https://shinagawa-web.com/blogs/react-router-v7-framework-guide-blog-site-routing-example<br>
+結果：learn_js/react-router-v7-Framework<br>
 <br>
 React Router v7(ライブラリ利用)を使ったブログサイトの構築ガイド<br>
 参照：https://shinagawa-web.com/blogs/react-router-v7-library-blog-setup-guide<br>
