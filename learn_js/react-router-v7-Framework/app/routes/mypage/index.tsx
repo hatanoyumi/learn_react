@@ -6,7 +6,9 @@ export default function Mypage() {
     <>
       <HomeNav />
       <MyPageNav />
-      <h1>mypage TOP</h1>
+      <section className="contents">
+        <h1>マイページ TOP</h1>
+      </section>
     </>
   )
 }

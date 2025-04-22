@@ -1,3 +1,3 @@
 export default function Account() {
-  return <h2>account</h2>
+  return <h2>アカウント</h2>
 }

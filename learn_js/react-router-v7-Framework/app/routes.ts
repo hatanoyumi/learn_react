@@ -14,4 +14,4 @@ export default [
       route('settings', './routes/mypage/settings.tsx'),
     ])
   ])
-] satisfies RouteConfig
+] satisfies RouteConfig;

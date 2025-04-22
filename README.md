@@ -48,4 +48,8 @@ React Router v7(フレームワーク利用) 実践ガイド：ブログサイ�
 React Router v7(ライブラリ利用)を使ったブログサイトの構築ガイド<br>
 参照：https://shinagawa-web.com/blogs/react-router-v7-library-blog-setup-guide<br>
 結果：learn_js/Vite/react-router_v7<br>
+<br>
+React Router v7(フレームワーク利用) 実践ガイド：ブログサイトを作りながら学ぶサーバーサイド、クライアントサイドのレンダリング<br>
+参照：https://shinagawa-web.com/blogs/react-router-v7-framework-blog-site-rendering-example<br>
+※サーバーサイドレンダリングまで。<br>
 

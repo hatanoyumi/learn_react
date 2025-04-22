@@ -1,0 +1,53 @@
+[
+    {
+      "id": 1,
+      "title": "React Router 7のセットアップ",
+      "description": "セットアップ以外にも様々な機能をご紹介",
+      "body": "His mother had always taught him not to ever think of himself as better than others. He'd tried to live by this motto. He never looked down on those who were less fortunate or who had less money than him. But the stupidity of the group of people he was talking to made him change his mind.",
+      "tags": [
+        "history",
+        "american",
+        "crime"
+      ],
+      "reactions": {
+        "likes": 192,
+        "dislikes": 25
+      },
+      "views": 305,
+      "userId": 121
+    },
+    {
+      "id": 2,
+      "title": "Reactでの状態管理方法",
+      "description": "useState、useContextなどをご紹介",
+      "body": "2His mother had always taught him not to ever think of himself as better than others. He'd tried to live by this motto. He never looked down on those who were less fortunate or who had less money than him. But the stupidity of the group of people he was talking to made him change his mind.",
+      "tags": [
+        "history",
+        "american",
+        "crime"
+      ],
+      "reactions": {
+        "likes": 192,
+        "dislikes": 25
+      },
+      "views": 305,
+      "userId": 122
+    },
+    {
+      "id": 3,
+      "title": "コンポーネント設計のベストプラクティス",
+      "description": "ディレクトリ構成についてもご紹介",
+      "body": "3His mother had always taught him not to ever think of himself as better than others. He'd tried to live by this motto. He never looked down on those who were less fortunate or who had less money than him. But the stupidity of the group of people he was talking to made him change his mind.",
+      "tags": [
+        "history",
+        "american",
+        "crime"
+      ],
+      "reactions": {
+        "likes": 192,
+        "dislikes": 25
+      },
+      "views": 305,
+      "userId": 123
+    }
+]

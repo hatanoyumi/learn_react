@@ -1,27 +1,85 @@
-@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-@theme {
-  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif,
-    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-}
 
 html,
 body {
-  @apply bg-white dark:bg-gray-950;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: "Helvetica Neue",
+  Arial,
+  "Hiragino Kaku Gothic ProN",
+  "Hiragino Sans",
+  Meiryo,
+  sans-serif;
+  background-color: #fff;
 
   @media (prefers-color-scheme: dark) {
     color-scheme: dark;
+    background-color: #333;
   }
 }
 
 h1 {
-  @apply font-bold text-xl
+  font-size: 20px;
+  font-weight: 900;
 }
 
 h2 {
-  @apply font-semibold text-lg
+  font-size: 18px;
+  font-weight: 600;
+}
+
+a {
+  text-decoration: none;
 }
 
 .active {
-  @apply text-sky-600;
+  color: #6495ed;
 }
+
+nav {
+  display:  flex;
+  align-items: center;
+  margin: 0;
+  padding: 0 30px;
+  height: 60px;
+  gap: 0 2em;
+
+  &.-top {
+    border-bottom: 2px solid #eee;
+  }
+
+  &.-mypage {
+    height: 40px;
+    background-color: #eee;
+    border-top: 1px solid #ccc;
+    @media (prefers-color-scheme: dark) {
+      background-color: #666;
+    }
+  }
+}
+
+.contents {
+  display: block;
+  padding: 10px 30px;
+
+  .list {
+    padding: 0;
+    list-style: none;
+    li {
+      padding-left: 1em;
+      text-indent: -1em;
+    }
+
+    .text {
+      padding: 0;
+      text-indent: 0;
+      color: #666;
+    }
+  }
+}
+
+

@@ -1,3 +1,3 @@
 export default function Setting() {
-  return <h2>setting</h2>
+  return <h2>設定画面</h2>
 }

@@ -7,7 +7,9 @@ export default function MyPage() {
     <>
       <HomeNav />
       <MyPageNav />
-      <Outlet />
+      <section className="contents">
+        <Outlet />
+      </section>
     </>
   )
 }
