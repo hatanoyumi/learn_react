@@ -7,7 +7,7 @@ ReactとNextの勉強場所
 02 React<br>
 03 tailwindcss(pages_router)<br>
 04 learn_js<br>
-05 next_microcms(ヘッドレスCMSテスト用)<br>
+05 next_microcms(ヘッドレスCMSテスト用)→一階層上に移動<br>
 <br>
 ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー<br>
 04_learn_js内で勉強<br>
