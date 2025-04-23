@@ -6,9 +6,11 @@ ReactとNextの勉強場所
 01 Next<br>
 02 React<br>
 03 tailwindcss(pages_router)
+04 learn_js
+05 Next_CMS(ヘッドレスCMSテスト用)
 
 ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー<br>
-learn_js内で勉強<br>
+04_learn_js内で勉強<br>
 <br>
 
 20250123〜0213 learn_js → JS学習「これからのjavascriptの教科書」使用<br>
@@ -52,4 +54,4 @@ React Router v7(ライブラリ利用)を使ったブログサイトの構築ガ
 React Router v7(フレームワーク利用) 実践ガイド：ブログサイトを作りながら学ぶサーバーサイド、クライアントサイドのレンダリング<br>
 参照：https://shinagawa-web.com/blogs/react-router-v7-framework-blog-site-rendering-example<br>
 ※サーバーサイドレンダリングまで。<br>
-
+ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー<br>
