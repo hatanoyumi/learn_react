@@ -5,10 +5,10 @@ ReactとNextの勉強場所
 00 Nextテンプレート（appとpagesのフォルダ構成の違い確認用）<br>
 01 Next<br>
 02 React<br>
-03 tailwindcss(pages_router)
-04 learn_js
-05 next_microcms(ヘッドレスCMSテスト用)
-
+03 tailwindcss(pages_router)<br>
+04 learn_js<br>
+05 next_microcms(ヘッドレスCMSテスト用)<br>
+<br>
 ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー<br>
 04_learn_js内で勉強<br>
 <br>
