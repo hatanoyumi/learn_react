@@ -53,5 +53,11 @@ React Router v7(ライブラリ利用)を使ったブログサイトの構築ガ
 <br>
 React Router v7(フレームワーク利用) 実践ガイド：ブログサイトを作りながら学ぶサーバーサイド、クライアントサイドのレンダリング<br>
 参照：https://shinagawa-web.com/blogs/react-router-v7-framework-blog-site-rendering-example<br>
-※サーバーサイドレンダリングまで。<br>
-ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー<br>
+※サーバーサイドレンダリングまで。<br><br>
+ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー<br><br>
+
+2025/05/27<br>
+図解ハンズオン：Reactを使った音楽プレイヤーを作ろう！<br>
+参照： https://qiita.com/Sicut_study/items/a27fb53468e14216d6fb<br>
+結果：learn_js/Vite/react_music-player<br>
+
