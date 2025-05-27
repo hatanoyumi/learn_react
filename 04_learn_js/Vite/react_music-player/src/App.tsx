@@ -114,7 +114,7 @@ function App() {
               variant="ghost"
               size="icon"
               onClick={handlePrevious}
-              className="text-gray-600 hover:text-gray-300 transition-colors"
+              className="text-white hover:text-gray-300 transition-colors"
             >
               <SkipBack className="h-6 w-6" />
             </Button>
@@ -122,7 +122,7 @@ function App() {
               variant="ghost"
               size="icon"
               onClick={togglePlayPause}
-              className="text-gray-600 hover:text-gray-300 transition-colors"
+              className="text-white hover:text-gray-300 transition-colors"
             >
               {isPlaying ? (
                 <Pause className="h-8 w-8" />
@@ -134,7 +134,7 @@ function App() {
               variant="ghost"
               size="icon"
               onClick={handleNext}
-              className="text-gray-600 hover:text-gray-300 transition-colors"
+              className="text-white hover:text-gray-300 transition-colors"
             >
               <SkipForward className="h-6 w-6" />
             </Button>
