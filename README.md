@@ -55,9 +55,21 @@ React Router v7(フレームワーク利用) 実践ガイド：ブログサイ�
 参照：https://shinagawa-web.com/blogs/react-router-v7-framework-blog-site-rendering-example<br>
 ※サーバーサイドレンダリングまで。<br><br>
 ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー<br><br>
+2025/04/23〜<br>
+microCMS<br>
+
+<br>
+<br><br>
+2025/05/22〜 <br>
+参照： サバイバルTypeScript( https://typescriptbook.jp/ )
+結果：　learn_ts/random-catcat<br>
+vercel: https://learn-ts-affn.vercel.ap<br>
+
+<br><br>
 
 2025/05/27<br>
 図解ハンズオン：Reactを使った音楽プレイヤーを作ろう！<br>
 参照： https://qiita.com/Sicut_study/items/a27fb53468e14216d6fb<br>
 結果：learn_js/Vite/react_music-player<br>
+vercel: https://reactmusic-player.vercel.app/<br>
 
