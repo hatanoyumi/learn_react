@@ -65,7 +65,8 @@ GitHub<br>
 https://github.com/hatanoyumi/next_microcms<br>
 vercel<br>
 https://next-microcms-murex.vercel.app/<br>
-※記事作成から配信まで若干タイムラグがある<br>
+※vercelは記事作成から配信まで若干タイムラグがある<br>
+<br>以下抜粋<br>
 4/24 お知らせ作ってみるテスト<br>
 https://vercel.com/hatanoyumis-projects/microcms-news<br>
 <br>
