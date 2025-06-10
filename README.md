@@ -61,16 +61,13 @@ microCMS<br>
 https://blog.microcms.io/what-is-headlesscms/<br>
 https://blog.microcms.io/getting-started/<br>
 https://blog.microcms.io/microcms-next15-jamstack-blog/<br>
-<br>
 GitHub<br>
 https://github.com/hatanoyumi/next_microcms<br>
-<br>
 vercel<br>
 https://next-microcms-murex.vercel.app/<br>
 ※記事作成から配信まで若干タイムラグがある<br>
 4/24 お知らせ作ってみるテスト<br>
-https://vercel.com/<br>
-hatanoyumis-projects/microcms-news<br>
+https://vercel.com/hatanoyumis-projects/microcms-news<br>
 <br>
 4/25〜5/1 microCMSのカスタムフィールドを使ってランディングページを作ろう<br>
 参照<br>
@@ -79,17 +76,17 @@ https://blog.microcms.io/custom-field-lp/<br>
 vercel<br>
 https://vercel.com/hatanoyumis-projects/microcms-lp<br>
 <br>
-5/2 v0いろいろ試してみたけど微妙。いらないファイル残りすぎのところでフリープラン制限終了<br>
+5/2<br>
+v0いろいろ試してみたけど微妙。いらないファイル残りすぎのところでフリープラン制限終了<br>
 【Nextjs15】microCMSとAIを使って技術ブログを作成する 前編<br>
 https://www.nagato-tech.com/article/nextjs-microcms-v0 <br>
 ヘッダー作るところまで<br>
-　→ 最終的にお手上げ（teilwindcssの3系と4系の違いでエラーが出るようで、一度エラーになると最初からになる<br>
+→ 最終的にお手上げ（teilwindcssの3系と4系の違いでエラーが出るようで、一度エラーになると最初からになる<br>
 <br>
-5/16〜<br>　
-2025年人気No.1のNext.jsで、最新ツールとウェブを作る！ | エピソード1 紹介と環境設定<br>
-https://qiita.com/BNR-Long/items/e9cdf626edb8e46aa4b7<br>
-エピソード２<br>　https://qiita.com/BNR-Long/items/<br>ab62e7348a5e760d0c54<br>
-エピソード３<br>　https://qiita.com/BNR-Long/items/a454b14951a113d96b19<br>
+5/16〜<br>
+2025年人気No.1のNext.jsで、最新ツールとウェブを作る！<br>エピソード1 紹介と環境設定　https://qiita.com/BNR-Long/items/e9cdf626edb8e46aa4b7<br>
+エピソード２　https://qiita.com/BNR-Long/items/ab62e7348a5e760d0c54<br>
+エピソード３　https://qiita.com/BNR-Long/items/a454b14951a113d96b19<br>
 ※最新のＮextはteilwindcss４の設定が最初からされているので、追加で何か入れる必要はない（入れるとエラーになる）<br>
 ５までやって、ブログ部分にmicroCMSを入れてみる。成功！<br>
 
