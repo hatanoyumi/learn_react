@@ -72,4 +72,16 @@ vercel: https://learn-ts-affn.vercel.ap<br>
 参照： https://qiita.com/Sicut_study/items/a27fb53468e14216d6fb<br>
 結果：learn_js/Vite/react_music-player<br>
 vercel: https://reactmusic-player.vercel.app/<br>
+<br><br>
+
+javascriptの基本を忘れがちなのでおさらい<br>
+5/28　mdn web docs( https://developer.mozilla.org/ja/docs/Learn_web_development )<br>
+→　learn_mdn-web-docs<br>
+<br><br>
+5/29〜　Learn JavaScript　https://learnjavascript.online<br>
+※無料でできるところまで<br>
+<br><br>
+6/5〜<br>
+ReactでTODOリストをもう一回　参照：https://developer.mozilla.org/ja/docs/Learn_web_development/Core/Frameworks_libraries/React_getting_started<br>
+→ learn_js/Vite/React_TODO2<br>
 
