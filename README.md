@@ -91,8 +91,8 @@ https://vercel.com/hatanoyumis-projects/v0-japanese-blog-website<br>
 ※最新のＮextはteilwindcss４の設定が最初からされているので、追加で何か入れる必要はない（入れるとエラーになる）<br>
 ５までやって、ブログ部分にmicroCMSを入れてみる。成功！<br>
 vercel<br>
-https://vercel.com/hatanoyumis-projects/06_next_learn
-ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー<br><br>
+https://vercel.com/hatanoyumis-projects/06_next_learn<br>
+ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー<br>
 microCMSは一旦ここまで。
 
 <br>
