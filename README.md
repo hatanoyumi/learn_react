@@ -80,7 +80,8 @@ https://vercel.com/hatanoyumis-projects/microcms-lp<br>
 v0いろいろ試してみたけど微妙。いらないファイル残りすぎのところでフリープラン制限終了<br>
 【Nextjs15】microCMSとAIを使って技術ブログを作成する 前編<br>
 https://www.nagato-tech.com/article/nextjs-microcms-v0 <br>
-ヘッダー作るところまで<br>
+vercel<br>
+https://vercel.com/hatanoyumis-projects/v0-japanese-blog-website<br>
 → 最終的にお手上げ（teilwindcssの3系と4系の違いでエラーが出るようで、一度エラーになると最初からになる<br>
 <br>
 5/16〜<br>
@@ -89,12 +90,14 @@ https://www.nagato-tech.com/article/nextjs-microcms-v0 <br>
 エピソード３　https://qiita.com/BNR-Long/items/a454b14951a113d96b19<br>
 ※最新のＮextはteilwindcss４の設定が最初からされているので、追加で何か入れる必要はない（入れるとエラーになる）<br>
 ５までやって、ブログ部分にmicroCMSを入れてみる。成功！<br>
+vercel<br>
+https://vercel.com/hatanoyumis-projects/06_next_learn
 
 <br><br>
 2025/05/22〜 <br>
 参照： サバイバルTypeScript( https://typescriptbook.jp/ )
 結果：　learn_ts/random-catcat<br>
-vercel: https://learn-ts-affn.vercel.ap<br>
+vercel: https://learn-ts-affn.vercel.app/<br>
 
 <br>
 2025/05/27<br>
