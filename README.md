@@ -57,30 +57,65 @@ React Router v7(フレームワーク利用) 実践ガイド：ブログサイ�
 ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー<br><br>
 2025/04/23〜<br>
 microCMS<br>
-
+参照<br>
+https://blog.microcms.io/what-is-headlesscms/<br>
+https://blog.microcms.io/getting-started/<br>
+https://blog.microcms.io/microcms-next15-jamstack-blog/<br>
 <br>
+GitHub<br>
+https://github.com/hatanoyumi/next_microcms<br>
+<br>
+vercel<br>
+https://next-microcms-murex.vercel.app/<br>
+※記事作成から配信まで若干タイムラグがある<br>
+4/24 お知らせ作ってみるテスト<br>
+https://vercel.com/<br>
+hatanoyumis-projects/microcms-news<br>
+<br>
+4/25〜5/1 microCMSのカスタムフィールドを使ってランディングページを作ろう<br>
+参照<br>
+https://blog.microcms.io/custom-field-lp/<br>
+※繰り返しフィールドは思ったように使えない。最終的にお知らせ用APIを流用。<br>（ヘッダーフッターは単独ならカスタムフィールドでまとめて作れる）<br>
+vercel<br>
+https://vercel.com/hatanoyumis-projects/microcms-lp<br>
+<br>
+5/2 v0いろいろ試してみたけど微妙。いらないファイル残りすぎのところでフリープラン制限終了<br>
+【Nextjs15】microCMSとAIを使って技術ブログを作成する 前編<br>
+https://www.nagato-tech.com/article/nextjs-microcms-v0 <br>
+ヘッダー作るところまで<br>
+　→ 最終的にお手上げ（teilwindcssの3系と4系の違いでエラーが出るようで、一度エラーになると最初からになる<br>
+<br>
+5/16〜<br>　
+2025年人気No.1のNext.jsで、最新ツールとウェブを作る！ | エピソード1 紹介と環境設定<br>
+https://qiita.com/BNR-Long/items/e9cdf626edb8e46aa4b7<br>
+エピソード２<br>　https://qiita.com/BNR-Long/items/<br>ab62e7348a5e760d0c54<br>
+エピソード３<br>　https://qiita.com/BNR-Long/items/a454b14951a113d96b19<br>
+※最新のＮextはteilwindcss４の設定が最初からされているので、追加で何か入れる必要はない（入れるとエラーになる）<br>
+５までやって、ブログ部分にmicroCMSを入れてみる。成功！<br>
+
 <br><br>
 2025/05/22〜 <br>
 参照： サバイバルTypeScript( https://typescriptbook.jp/ )
 結果：　learn_ts/random-catcat<br>
 vercel: https://learn-ts-affn.vercel.ap<br>
 
-<br><br>
-
+<br>
 2025/05/27<br>
 図解ハンズオン：Reactを使った音楽プレイヤーを作ろう！<br>
 参照： https://qiita.com/Sicut_study/items/a27fb53468e14216d6fb<br>
 結果：learn_js/Vite/react_music-player<br>
 vercel: https://reactmusic-player.vercel.app/<br>
-<br><br>
+<br>
 
 javascriptの基本を忘れがちなのでおさらい<br>
 5/28　mdn web docs( https://developer.mozilla.org/ja/docs/Learn_web_development )<br>
 →　learn_mdn-web-docs<br>
-<br><br>
+<br>
+
 5/29〜　Learn JavaScript　https://learnjavascript.online<br>
 ※無料でできるところまで<br>
-<br><br>
+<br>
+
 6/5〜<br>
 ReactでTODOリストをもう一回　参照：https://developer.mozilla.org/ja/docs/Learn_web_development/Core/Frameworks_libraries/React_getting_started<br>
 → learn_js/Vite/React_TODO2<br>
