@@ -92,8 +92,10 @@ https://vercel.com/hatanoyumis-projects/v0-japanese-blog-website<br>
 ５までやって、ブログ部分にmicroCMSを入れてみる。成功！<br>
 vercel<br>
 https://vercel.com/hatanoyumis-projects/06_next_learn
+ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー<br><br>
+microCMSは一旦ここまで。
 
-<br><br>
+<br>
 2025/05/22〜 <br>
 参照： サバイバルTypeScript( https://typescriptbook.jp/ )
 結果：　learn_ts/random-catcat<br>
@@ -117,6 +119,7 @@ javascriptの基本を忘れがちなのでおさらい<br>
 <br>
 
 6/5〜<br>
-ReactでTODOリストをもう一回　参照：https://developer.mozilla.org/ja/docs/Learn_web_development/Core/Frameworks_libraries/React_getting_started<br>
+ReactでTODOリストをもう一回<br>
+参照：https://developer.mozilla.org/ja/docs/Learn_web_development/Core/Frameworks_libraries/React_getting_started<br>
 → learn_js/Vite/React_TODO2<br>
 
